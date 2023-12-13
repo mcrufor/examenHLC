@@ -116,9 +116,8 @@ class MainActivity : ComponentActivity() {
                             var index = 0;
 
                             productos.forEach {p ->
-                                if (p.nombre == producto.nombre && p.precio == producto.precio) {
-                                    indexOfProduct == index
-                                    Log.d("TAG", "MyApp: " + index)
+                                if (p.nombre == producto.nombre) {
+                                    indexOfProduct = index
                                 }
                                 index++
                             }
